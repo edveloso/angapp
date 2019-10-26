@@ -1,0 +1,22 @@
+<div class="container">  
+  
+
+          <table class="table" >  
+              <tr ngclass="btn-primary">  
+                <th class="tbl2">Id</th>  
+                <th class="tbl2">Name</th>                  
+              </tr>  
+              <tr *ngFor="let employee of allPessoas | async">  
+                <td class="tbl2">{{employee.id}}</td>  
+                <td class="tbl2">{{employee.nome  }}</td>                  
+                <td class="tbl2">  
+                  <button type="button" class="btn btn-info"matTooltip="Click Edit Button">Edit</button>  
+                </td>  
+                <td class="tbl2">  
+                  <button type="button" class="btn btn-danger"matTooltip="Click Delete Button">Delete</button>  
+                </td>  
+              </tr>  
+      
+            </table>  
+        
+    </div>  
